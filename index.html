@@ -1,14 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>JSON Prettify</title>
-  <link rel="stylesheet" href="./css/style.css">
-  <script defer src="./js/main.js"></script>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JSON Prettify</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script defer src="./js/main.js"></script>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="json-panel">
+        <textarea
+          name="json-input"
+          class="json-panel__textarea json-panel__textarea--input"
+        ></textarea>
+      </div>
+
+      <div class="actions">
+        <button class="actions__btn-convert  actions__btn-convert--format">Format</button>
+        <button class="actions__btn-convert  actions__btn-convert--minify">Minify</button>
+      </div>
+
+      <div class="json-panel">
+        <textarea
+          readonly
+          name="json-output"
+          class="json-panel__textarea json-panel__textarea--output"
+        ></textarea>
+      </div>
+    </div>
+  </body>
 </html>
